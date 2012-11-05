@@ -3,8 +3,10 @@ public class MobilePhone extends OldPhone{
 	private int numberCounter = 0;
 	private String alarmTone;
 	private String number;
+	private String brand;
 	
-	public MobilePhone(){
+	public MobilePhone(String brand){
+		super(brand);
 	    this.calledNumbers = new String[100];
 	}
 
@@ -18,18 +20,13 @@ public class MobilePhone extends OldPhone{
 	public void call(String number){
 	    this.number = number;
 	    System.out.println("Now calling " + number + "...");
-		this.numberList(number);
+		this.addToNumberList(number);
 	}
 	
 
-	public void numberList(String newNumber){
-	    if(numberCounter == 0){
+	public void addToNumberList(String newNumber){
 			calledNumbers[numberCounter] = number;
 			numberCounter++;
-		} else {
-	        calledNumbers[numberCounter] = number;
-		    numberCounter++;
-		}
 	}
 	
 	public void printLastNumbers(){
