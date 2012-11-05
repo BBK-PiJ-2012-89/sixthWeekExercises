@@ -1,7 +1,9 @@
 public class SmartPhone extends MobilePhone{
     private String position = "0238738478, 34728934729384";
+	private String brand;
 
-    public SmartPhone(){
+    public SmartPhone(String brand){
+	    super(brand);
 	}
 	
 	@Override
@@ -21,5 +23,4 @@ public class SmartPhone extends MobilePhone{
 	    System.out.println("Your location is " + position);
 	    return position;
 	}
-	
 }
