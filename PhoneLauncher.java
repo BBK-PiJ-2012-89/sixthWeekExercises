@@ -5,7 +5,7 @@ public class PhoneLauncher{
 	}
 	public void launch(){
 	
-	    SmartPhone galaxyS3 = new SmartPhone();
+	    SmartPhone galaxyS3 = new SmartPhone("dolomite");
 		
 		galaxyS3.call("07710912996");
 		galaxyS3.call("07710912956");
@@ -18,6 +18,7 @@ public class PhoneLauncher{
 		galaxyS3.playGame("Blast Monkeys");
 		galaxyS3.browseWeb("www.reddit.com");
 		galaxyS3.findPosition();
+		galaxyS3.getBrand();
 
 	}
 }
