@@ -1,15 +1,13 @@
 public class OldPhone implements Phone{
-
-    private String brand = null;
+    private String brand;
+	
 	public OldPhone(String brand){
 	    this.brand = brand;
     } 
 	
 	public String getBrand(){
+	    System.out.println("The brand of your phone is: " + brand);
 	    return brand;
-	}
-	
-	public OldPhone(){
 	}
 	
 	public void call(String number){
