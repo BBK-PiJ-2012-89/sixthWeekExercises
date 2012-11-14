@@ -46,5 +46,12 @@ public class MobilePhone extends OldPhone{
 	public void playGame(String theGame){
 	    System.out.println("You are now playing " +theGame);
 	}
+
+	public SmartPhone testPhone(Phone aPhone){
+		SmartPhone thisPhone = (SmartPhone) aPhone;
+		System.out.println("This Phone has just been upgraded to a smart phone!");
+		playGame("the phone is OK song!");
+		return thisPhone;
+	}
 }
 	
