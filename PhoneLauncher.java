@@ -7,6 +7,7 @@ public class PhoneLauncher{
 	
 	    MobilePhone myPhone = new SmartPhone("myPhone");
 	    MobilePhone aPhone = new SmartPhone("LISTEN");
+	    MobilePhone finalPhone = new MobilePhone("Nokia Ngage");
 
 		myPhone.call("0044999211558");		
 		myPhone.ringAlarm("Camptown Ladies");
@@ -15,6 +16,7 @@ public class PhoneLauncher{
 		myPhone.getBrand();
 		(myPhone.testPhone(aPhone)).browseWeb("www.reddit.com");
 		(myPhone.testPhone(aPhone)).findPosition();
+		myPhone.testPhone(finalPhone);
 
 	}
 }
