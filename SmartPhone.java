@@ -23,4 +23,5 @@ public class SmartPhone extends MobilePhone{
 	    System.out.println("Your location is " + position);
 	    return position;
 	}
+
 }
