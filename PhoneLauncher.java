@@ -6,16 +6,15 @@ public class PhoneLauncher{
 	public void launch(){
 	
 	    MobilePhone myPhone = new SmartPhone("myPhone");
-	    SmartPhone myGoodPhone = (SmartPhone) myPhone;
-		
+	    MobilePhone aPhone = new SmartPhone("LISTEN");
 
-		myGoodPhone.call("0044999211558");		
-		myGoodPhone.ringAlarm("Camptown Ladies");
+		myPhone.call("0044999211558");		
+		myPhone.ringAlarm("Camptown Ladies");
 		myPhone.printLastNumbers();
-		myGoodPhone.playGame("Blast Monkeys");
-		myGoodPhone.browseWeb("www.reddit.com");
-		myGoodPhone.findPosition();
+		myPhone.playGame("Blast Monkeys");
 		myPhone.getBrand();
+		(myPhone.testPhone(aPhone)).browseWeb("www.reddit.com");
+		(myPhone.testPhone(aPhone)).findPosition();
 
 	}
 }
